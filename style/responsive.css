@@ -72,7 +72,7 @@
         height: 100%;
         clip-path: circle(0px at 90% -10%);
         -webkit-clip-path: circle(0px at 90% -10%);
-        transition: all 1s ease-out;
+        transition: all 0.5s ease-out;
         pointer-events: none;
     }
 
@@ -170,7 +170,7 @@
     }
 
     .mobile-circle-header, .web-circle-header {
-        top: 12%;
+        top: 15%;
     }
 
     .mobile-card-content, .web-card-content {
@@ -200,6 +200,17 @@
 
     .intro-cta-container {
         margin-top: 48px;
+    }
+
+    .web-circle-header, .mobile-circle-header {
+        width: 84px;
+        height: 84px;
+        top: 25%;
+        left: 0;
+    }
+
+    .mobile-image, .web-image {
+        height: 44px;
     }
 }
 

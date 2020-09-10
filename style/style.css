@@ -15,7 +15,7 @@ body {
 body > div.overlay {
     content: " ";
     position: fixed;
-    z-index: 1;
+    z-index: 15;
     background: rgba(0, 0, 0, 0.5);
     width: 100%;
     height: 100%;
@@ -262,11 +262,13 @@ input:-webkit-autofill:active {
     align-items: center;
     z-index: 10;
     position: absolute;
-    top: -75px;
+    top: -85px;
+    transition: all 0.5s ease-out;
 }
 
 .mobile-image, .web-image {
     height: 64px;
+    transition: all 0.5s ease-out;
 }
 
 .mobile-card-content, .web-card-content {
