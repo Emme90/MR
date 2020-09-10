@@ -14,6 +14,7 @@
     const overlayContainer = document.querySelector('overlay');
     const scrollTrheshold = 24;
 
+
     function countWord(val) {
         return val ? val.length : 0;
     }
@@ -50,8 +51,8 @@
             document.body.classList.toggle('hide-overflow');
             navLinks.classList.toggle('open');
             hamburger.classList.toggle('open');
-            overlay.classList.toggle('show')
-            links.forEach(link => link.classList.toggle('fade'));
+            overlay.classList.toggle('show');
+            links.forEach((link) => link.classList.toggle('fade'));
         });
 
         links.forEach((link) => {
@@ -61,7 +62,6 @@
                 hamburger.classList.toggle('open');
                 navLinks.classList.toggle('open');
                 document.body.classList.toggle('hide-overflow');
-
             })
         })
 

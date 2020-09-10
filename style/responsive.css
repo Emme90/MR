@@ -214,6 +214,28 @@
     }
 }
 
+@media screen and (max-width: 500px) {
+    .web-circle-header, .mobile-circle-header {
+        left: -5%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .web-circle-header, .mobile-circle-header {
+        left: -10%;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .intro-text h1 {
+        font-size: 36px;
+    }
+
+    .web-circle-header, .mobile-circle-header {
+        left: -10%;
+    }
+}
+
 /* @media screen and (max-width: 1000px) {
     .intro {
         flex-direction: column;
