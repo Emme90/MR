@@ -4,6 +4,7 @@
         position: absolute;
         cursor: pointer;
         width: 30px;
+        height: 30px;
         right: 0;
         top: 25%;
         z-index: 20;
@@ -134,13 +135,20 @@
         opacity: 1;
     }
 
+    .about-main-container {
+        flex-direction: column;
+        align-items: center;
+    }
     .about-text-container {
-        width: 70%;
+        order: 2;
+        width: 100%;
+        border-radius: 10px 10px 10px 10px;
     }
 
     .about-image {
-        width: 30%;
-        height: 100%;
+        order: 1;
+        height: 200px;
+        border-radius: 10px 10px 10px 10px;
     }
 }
 
@@ -161,11 +169,14 @@
         margin-top: 24px;
     }
 
+    .mobile-circle-header, .web-circle-header {
+        top: 12%;
+    }
+
     .mobile-card-content, .web-card-content {
-        position: absolute;
-        top: -8%;
-        left: 80px;
-        padding: 16px 24px 16px 48px;
+        width: 70%;
+        margin-left: auto;
+        padding: 16px 24px 16px 60px;
     }
 
     .contact-name-surname {
@@ -178,6 +189,17 @@
 
     .contact-surname {
         width: 100%;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .intro {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .intro-cta-container {
+        margin-top: 48px;
     }
 }
 
