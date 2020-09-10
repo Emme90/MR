@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/responsive.css">
+    <link rel="stylesheet" href="./style/animation.css">
+    <link rel="stylesheet" href="./style/tooltip.css">
+    <link rel="icon" href="./images/favicon.png">
+    <title>MR</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo-container">
+                <img src="./images/logo.png" alt="MR - logo">
+            </div>
+            <nav class="nav-container">
+                <div class="hamburger">
+                    <span class="line upper-line"></span>
+                    <span class="line mid-line"></span>
+                    <span class="line mid-line-two"></span>
+                    <span class="line lower-line"></span>
+                </div>
+                <ul class="nav-links">
+                    <li class="nav-link"><a href="#about-me">ABOUT ME</a></li>
+                    <li class="nav-link"><a href="#knowledge">KNOWLEDGE</a></li>
+                    <li class="nav-link"><a href="#contact-me">CONTACT ME</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="intro">
+            <div class="intro-text">
+                <h1>SOFTWARE DEVELOPMENT.</h1>
+                <h2>Creating from imagination.</h2>
+            </div>
+            <div class="intro-cta-container">
+                <a href="#contact-me">
+                    <div class="intro-cta bounce-intro-cta">
+                        <h2>LET'S CREATE SOMETHING!</h2>
+                        <i class="arrow down"></i>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <section id="about-me">
+            <div class="about-main-container">
+                <div class="about-text-container">
+                    <div class="about-text-title">
+                        <h1>Hi! I'm Milos Ribera.</h1>
+                        <h3>Great to see you.</h3>
+                    </div>
+                    <div class="about-text-content text-right">
+                        <p>
+                            I'm 30's boy/guy/dad living in Italy.
+                            I got a bachelor on Economics and Marketing but after I started to work I fall in love with coding.
+                            The thought that everything I can imagine could became real took me. So I decided to study programming.
+                            My study and my esperience has been started from mobile development, then they moved to web development. 
+                        </p>
+                    </div>
+                </div>
+                <img src="./images/me-original.jpeg" alt="Milos Ribera" class="about-image">
+            </div>
+        </section>
+        <section id="knowledge">
+            <div class="knowledge-container">
+                <div class="knowledge-card-container">
+                    <div class="web-card">
+                        <div class="web-circle-header">
+                            <img class="web-image" src="./images/web_dev_img.png" alt="web development">
+                        </div>
+                        <div class="web-card-content">
+                            <p>
+                                <strong>WEB DEVELOPMENT</strong><br>
+                                I created websites like this one just using HTML5, CSS3 and JS, but I also created web app using Angular framework (HTML5, CSS3/SCSS, JS/TY)
+                            </p>
+                        </div>
+                    </div>
+                    <div class="mobile-card">
+                        <div class="mobile-circle-header">
+                            <img class="mobile-image" src="./images/mobile-dev-img.png" alt="mobile development">
+                        </div>
+                        <div class="mobile-card-content">
+                            <p>
+                                <strong>MOBILE DEVELOPMENT</strong>
+                                I develop many testing apps with different kind of complexity, covering UX, DB connection, API request. Until now I unfortunatly didn't  the possibility to publish any personal o professional app. 
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <h3>LANGUAGES AND FRAMEWORK</h3>
+                <div class="lang-framework-grid">
+                    <div class="lang-image-container">
+                        <img class="lang-logo" src="./images/javascript_logo.png" alt="javascript logo">
+                        <span>JAVASCRIPT</span>
+                    </div>
+                    <div class="lang-image-container">
+                        <img class="lang-logo" src="./images/html_logo.png" alt="html logo">
+                        <span>HTML5</span>
+                    </div>
+                    <div class="lang-image-container">
+                        <img class="lang-logo" src="./images/css_logo.png" alt="css logo">
+                        <span>CSS3</span>
+                    </div>
+                    <div class="lang-image-container">
+                        <img class="lang-logo" src="./images/angular_logo.png" alt="angular logo">
+                        <span>ANGULAR 2+</span>
+                    </div>
+                    <div class="lang-image-container">
+                        <img class="lang-logo" src="./images/typescript_logo.svg" alt="typescript logo">
+                        <span>TYPESCRIPT</span>
+                    </div>
+                    <div class="lang-image-container">
+                        <img class="lang-logo" src="./images/android_logo.png" alt="android logo">
+                        <span>ANDROID</span>
+                    </div>
+                    <div class="lang-image-container">
+                        <img class="lang-logo" src="./images/java_logo.png" alt="java logo">
+                        <span>JAVA</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact-me" class="contact-section">
+            <div class="contact-container">
+                <h1>CONTACT ME:</h1>
+                <form action="send.php" method="POST">
+                    <div class="contact-form">
+                        <div class="contact-name-surname">
+                            <div class="contact-name">
+                                <span>Name:</span>
+                                <input type="text" name="firstName" class="input" maxlength="50" required minlength="1">
+                            </div>
+                            <div class="contact-surname">
+                                <span>Surname:</span>
+                                <input type="text" name="lastName" class="input" maxlength="50" required minlength="1">
+                            </div>
+                        </div>
+                        <div class="contact-email">
+                            <span>Email:</span>
+                            <input type="email" name="email" class="input" maxlength="100" required
+                                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Inserisci una email valida.">
+                        </div>
+                        <div class="contact-message">
+                            <span>Message:</span>
+                            <textarea id="textarea" type="text" name="message" class="input input-message"
+                                maxlength="600" required></textarea>
+                            <div class="message-count">
+                                <span id="textareaCount">0/600</span>
+                            </div>
+                        </div>
+                        <div class="btn-container">
+                            <button id="send-btn" class="send-message-btn" type="submit"><strong>SEND MESSAGE</strong></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-container">
+            <div class="social-icon-container">
+                <a href="https://www.facebook.com/milos.ribera" target="_blank">
+                    <div class="tooltip">
+                        <img class="social-icon" src="./images/facebook_logo.png" alt="facebook Milos Ribera">
+                        <span class="tooltiptext">Facebook</span>
+                    </div>
+                </a>
+                <a href="https://it.linkedin.com/in/milos-ribera-8b307587" target="_blank">
+                    <div class="tooltip">
+                        <img class="social-icon" src="./images/linkedin_logo.png" alt="linkedin Milos Ribera">
+                        <span class="tooltiptext">Linkedin</span>
+                    </div>
+                </a>
+                <a href="https://github.com/Emme90" target="_blank">
+                    <div class="tooltip">
+                        <img class="social-icon" src="./images/github_logo.png" alt="github Milos Ribera">
+                        <span class="tooltiptext">GitHub</span>
+                    </div>
+                </a>
+                <a href="https://www.instagram.com/milosribe/" target="_blank">
+                    <div class="tooltip">
+                        <img class="social-icon" src="./images/instagram_logo.png" alt="instagram Milos Ribera">
+                        <span class="tooltiptext">Instagram</span>
+                    </div>
+                </a>
+            </div>
+            <div>
+                &copy; Powered with &#10084; by ME
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="./index.js"></script>
+
+</html>

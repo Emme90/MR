@@ -1,0 +1,192 @@
+@media screen and (max-width: 860px) {
+
+    .hamburger {
+        position: absolute;
+        cursor: pointer;
+        width: 30px;
+        right: 0;
+        top: 25%;
+        z-index: 20;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: .5s ease-in-out;
+        -moz-transition: .5s ease-in-out;
+        -o-transition: .5s ease-in-out;
+        transition: .5s ease-in-out;
+        cursor: pointer;
+    }
+
+    .line {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 4px;
+        background: #00264D;
+        margin-top: 5px;
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+        -webkit-transition: .25s ease-in-out;
+        -moz-transition: .25s ease-in-out;
+        -o-transition: .25s ease-in-out;
+        transition: .25s ease-in-out;
+    }
+
+    .upper-line {
+        top: 0;
+    }
+
+    .mid-line, .mid-line-two {
+        top: 8px;
+    }
+
+    .lower-line {
+        top: 16px;
+    }
+
+    nav {
+        position: relative;
+    }
+
+    .logo-container {
+        width: 30%;
+    }
+    
+    .nav-container {
+        width: 70%;
+    }
+
+    .nav-links {
+        position: fixed;
+        flex-direction: column;
+        justify-content: space-evenly;
+        background: #00264D;
+        align-items: flex-start;
+        padding-left: 5%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+        width: 100%;
+        height: 100%;
+        clip-path: circle(0px at 90% -10%);
+        -webkit-clip-path: circle(0px at 90% -10%);
+        transition: all 1s ease-out;
+        pointer-events: none;
+    }
+
+    .nav-links.open {
+        clip-path: circle(200% at 90% -10%);
+        -webkit-clip-path: circle(200% at 90% -10%);
+        pointer-events: all;
+    }
+
+    .hamburger.open .line{
+        background: white;
+    }
+
+    .hamburger.open .mid-line-two {
+        display: all;
+        -webkit-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+
+    .hamburger.open .mid-line {
+        display: all;
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg)
+    }
+
+    .hamburger.open .upper-line {
+        display: none;
+    }
+
+    .hamburger.open .lower-line {
+        display: none;
+    }
+
+    .nav-links li {
+        opacity: 0;
+    }
+
+    .nav-links li a {
+        font-size: 24px;
+        color: white;
+    }
+
+    .nav-links li:nth-child(1) {
+        transition: all 0.5s ease 0.2s;
+    }
+
+    .nav-links li:nth-child(2) {
+        transition: all 0.5s ease 0.4s;
+    }
+
+    .nav-links li:nth-child(3) {
+        transition: all 0.5s ease 0.6s;
+    }
+
+    li.fade {
+        opacity: 1;
+    }
+
+    .about-text-container {
+        width: 70%;
+    }
+
+    .about-image {
+        width: 30%;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .knowledge-card-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mobile-card, .web-card {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        margin-top: 24px;
+    }
+
+    .mobile-card-content, .web-card-content {
+        position: absolute;
+        top: -8%;
+        left: 80px;
+        padding: 16px 24px 16px 48px;
+    }
+
+    .contact-name-surname {
+        flex-direction: column;
+    }
+
+    .contact-name {
+        width: 100%;
+    }
+
+    .contact-surname {
+        width: 100%;
+    }
+}
+
+/* @media screen and (max-width: 1000px) {
+    .intro {
+        flex-direction: column;
+    }
+
+    .intro-cta-container {
+        margin-top: 48px;
+    }
+} */
