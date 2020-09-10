@@ -15,7 +15,7 @@
         top: 0
     });
 
-    window.addEventListener('scrollY', () => {
+    window.addEventListener('scroll', () => {
         headerOnScroll();
     })
 
