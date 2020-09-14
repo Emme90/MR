@@ -55,15 +55,15 @@
             links.forEach((link) => link.classList.toggle('fade'));
         });
 
-        links.forEach((link) => {
-            link.addEventListener('click', () => {
-                link.classList.toggle('fade');
-                overlay.classList.toggle('show');
-                hamburger.classList.toggle('open');
-                navLinks.classList.toggle('open');
-                document.body.classList.toggle('hide-overflow');
-            })
-        })
+        // links.forEach((link) => {
+        //     link.addEventListener('click', () => {
+        //         link.classList.toggle('fade');
+        //         overlay.classList.toggle('show');
+        //         hamburger.classList.toggle('open');
+        //         navLinks.classList.toggle('open');
+        //         document.body.classList.toggle('hide-overflow');
+        //     })
+        // })
 
         // if (overlayContainer) {
         //     overlayContainer.addEventListener('click', () => {
