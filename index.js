@@ -74,9 +74,10 @@
 
 
         sendMsgBtn.addEventListener('click', () => {
-            if (txtName.value.length > 0 && txtSurname.value.length > 0 && txtEmail.value.length > 0 && textarea.value.length > 0) {
-                // resetForm();
-            }
+            // if (txtName.value.length > 0 && txtSurname.value.length > 0 && txtEmail.value.length > 0 && textarea.value.length > 0) {
+            //     resetForm();
+            // }
+            alert("SEND MESSAGE FUNCTION WILL BE ENABLE SOON. IF YOU ARE INTERESTED TO CONTACT ME SEND AN EMAIL TO: milos.ribera@gmail.com")
         });
 
         textarea.addEventListener('input', () => {
