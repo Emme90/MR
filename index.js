@@ -29,6 +29,7 @@
     // Like constructor, although you may have a real constructor if you use a real Class 
     // (and yes, you can in plain JS)
     const init = function () {
+
         window.scroll({
             top: 0
         });
@@ -55,15 +56,16 @@
             links.forEach((link) => link.classList.toggle('fade'));
         });
 
-        // links.forEach((link) => {
-        //     link.addEventListener('click', () => {
-        //         link.classList.toggle('fade');
-        //         overlay.classList.toggle('show');
-        //         hamburger.classList.toggle('open');
-        //         navLinks.classList.toggle('open');
-        //         document.body.classList.toggle('hide-overflow');
-        //     })
-        // })
+        links.forEach((link) => {
+            link.addEventListener('click', () => {
+                links.forEach(l => l.classList.toggle('fade'));
+                overlay.classList.toggle('show');
+                hamburger.classList.toggle('open');
+                navLinks.classList.toggle('open');
+                document.body.classList.toggle('hide-overflow');
+            });
+            // link.classList.toggle('fade');
+        })
 
         // if (overlayContainer) {
         //     overlayContainer.addEventListener('click', () => {
